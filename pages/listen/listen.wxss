@@ -19,6 +19,6 @@
 .ul{display: flex;flex-flow: column;}
 .ul li{font-size: 32rpx;height: 28rpx;display: flex;align-items: center;margin-bottom: 45rpx;}
 .ul li h1{font-size: 28rpx;}
-.ul li .active{color: rgb(63, 212, 125);}
 .lit{margin-top: 40rpx;}
+.active{color: rgb(63, 212, 125);}
 
