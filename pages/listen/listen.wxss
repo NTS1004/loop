@@ -1,0 +1,24 @@
+/* pages/listen/listen.wxss */
+.listen{overflow: hidden;display: flex;flex-flow: column;justify-items: center;}
+.body-view,.slider{margin-right: 20rpx;}
+.body-view{position: fixed;bottom: 148rpx;width: 98%}
+.background{width: 100%;height: 100%;background-size: cover;position: absolute;z-index: -1;top: 0;overflow: hidden;filter: blur(40rpx);transform: scale(1.2);}
+.bigBack{width: 448rpx;height: 427rpx;background: #3a3b3a;border-radius: 50%;display: flex;justify-content: center;align-items: center;padding: 15rpx 15rpx;margin: 260rpx auto 0 auto;}
+.backimg{background-size: 100% 100%;border-radius: 50%;width: 100%;height: 100%;}
+.ctrl{width: 100%;display: flex;margin: 0 2rpx;justify-content: space-around;position: fixed;bottom: 50rpx;}
+.ctrl .iconfont{font-size: 96rpx;color: white;}
+
+.mask{width: 100%;height: 100%;position: fixed;top: 0;background: rgba(0,0,0,.6);z-index: 45;opacity: 0;visibility: hidden;transition: .4s all;}
+.max{opacity: 1;visibility: visible;}
+.list{width: 100%;height: auto;background: white;position: fixed;bottom: -800rpx;z-index: 50;padding:0 25rpx;transition: .3s all;}
+.lik{height: 90rpx;border-bottom: 1rpx solid #ccc;display: flex;align-items: center;}
+.lik .iconfont{font-size: 70rpx;margin-right: 16rpx;}
+.lik .icon-liebiaoxunhuan,.lik .icon-danquxunhuan{font-size: 55rpx;}
+.lik .stu{font-size: 35rpx;}
+.lik .ik{display: flex;align-items: center;}
+.ul{display: flex;flex-flow: column;}
+.ul li{font-size: 32rpx;height: 28rpx;display: flex;align-items: center;margin-bottom: 45rpx;}
+.ul li h1{font-size: 28rpx;}
+.ul li .active{color: rgb(63, 212, 125);}
+.lit{margin-top: 40rpx;}
+

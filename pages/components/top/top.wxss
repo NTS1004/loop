@@ -1,0 +1,16 @@
+.t{margin-bottom: 15rpx;}
+.t image{position: relative;border-radius: 12rpx;}
+.ita{width: 345rpx;float: left;margin-right: 10rpx;display: flex;flex-flow: column;align-items: center;margin-bottom: 13rpx;}
+.ita image{margin-bottom: 8rpx;border-radius: 10rpx;}
+.vki{position: relative;width: 100%;}
+.vico{position: absolute;z-index: 10;left: 15rpx;bottom: 22rpx;color: white;display: flex;justify-content: space-between;}
+.vico h1{font-size: 26rpx;margin-left: 12rpx;}
+.time{font-size: 26rpx;position: absolute;z-index: 10;right: 15rpx;bottom: 27rpx;color: white;}
+.icon-bofang1{position: absolute;z-index: 10;color: white;left: 50%;top: 50%;transform: translate(-50%,-50%);font-size: 70rpx;}
+.itt{margin-right: 0;}
+.ita span{font-size: 32rpx;}
+.scroll{height: 100%;}
+.scroll ::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+}

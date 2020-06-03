@@ -1,0 +1,24 @@
+.swiper{margin-bottom: 25rpx;height: 400rpx;}
+.navser{margin: 20rpx 20rpx 0 20rpx;border: 1px solid #ccc;height: 75rpx;border-radius: 36rpx;margin-top: 20rpx;margin-bottom: 5rpx;font-size: 36rpx;display: flex;align-items: center;justify-content: center;}
+
+.song{margin: 15rpx 10rpx 0 10rpx;}
+.song ::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.song image{width: 240rpx;height: 220rpx;border-radius: 6rpx;}
+.scroll{margin-top: 10rpx;}
+.ew{display: flex;}
+.sheet{display: flex;flex-flow: column;width: 240rpx;height: 280rpx;margin: 0 10rpx 0 5rpx;}
+.sheet span{width: 100%;font-size: 30rpx;}
+
+.music{margin: 20rpx 10rpx 0 10rpx;}
+.muk{display: flex;margin-top: 15rpx;margin-bottom: 5rpx;}
+.muk image{width: 148rpx;height: 143rpx;border-radius: 6rpx;}
+.mui{flex: 1;display: flex;flex-flow: column;justify-content: space-around;margin-left: 12rpx;}
+.mi{display: flex;align-items: center;}
+.mi i{font-size: 20rpx;margin-right: 10rpx;width: 42rpx;border: 1px solid;border-radius: 8rpx;padding: 0 2px 1px 2px;text-align: center;}
+.yz{color: #49b1f5;}
+.dj{color: springgreen;}
+.mui span{font-size: 30rpx;}

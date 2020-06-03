@@ -1,0 +1,21 @@
+<scroll-view class="scroll" scroll-y="{{true}}">
+<view wx:for="{{mv}}" wx:key="index">
+  <view class="t" wx:if="{{index % 9 == 0}}">
+   <image src="{{item.img}}" style="width: 100%;height: 390rpx" data-name="{{item.title}} "bind:tap="play">
+     <text class='iconfont icon-bofang1'></text>
+    </image>
+  </view>
+  <view class="{{index % 2 == 0 ? 'ita itt' : 'ita'}}"  wx:if="{{index % 9 !== 0}}">
+   <view class="vki">
+    <image src="{{item.img}}" style="width: 100%;height: 220rpx" data-name="{{item.title}} "bind:tap="play">
+   </image>
+    <view class="vico">
+     <text class='iconfont icon-bofang'></text>
+     <h1>{{item.count}}万</h1>
+    </view>
+    <text class="time">{{item.time}}</text>
+   </view>
+   <span>{{item.title}}</span>
+  </view>
+ </view>
+ </scroll-view>

@@ -1,0 +1,46 @@
+<view class="listen">
+ <view class="background" style="background-image: url({{musicImg}})"></view>
+ <view class="mask" class="{{transtion == true ? 'mask max' : 'mask'}}" bind:tap="hide"></view>
+ <view class="list" animation="{{animation}}">
+   <view class="lik" bind:tap="code">
+    <view class="ik" wx:if="{{code == 0}}">
+     <text class="iconfont iconfont icon-icon--"></text>
+     <text class="stu">随机播放</text>
+    </view>
+    <view class="ik" wx:elif="{{code == 1}}">
+     <text class="iconfont iconfont icon-liebiaoxunhuan"></text>
+     <text class="stu">顺序播放</text>
+    </view>
+    <view class="ik" wx:else>
+     <text class="iconfont iconfont icon-danquxunhuan"></text>
+     <text class="stu">单曲循环</text>
+    </view>
+   </view>
+   <ul class="ul">
+    <li wx:for="{{list}}" wx:key="index" class="{{index == 0 ? 'lit' : ''}} {{item.musicName == name ? 'active' : ''}}" bind:tap="listen" data-index="{{index}}" data-name="{{item.musicName}}">
+     <text>{{item.musicName}}-</text>
+     <h1>{{item.singer}}</h1>
+    </li>
+   </ul>
+ </view>
+ <view class="bigBack">
+  <view class="backimg" style="background-image: url({{musicImg}})"></view>
+ </view>
+ <view class="body-view">
+   <slider class="slider" bindchange="slider1change" left-icon="cancel" right-icon="success_no_circle" block-size="14" value='{{position}}' color="rgba(0,0,0,.2)" selected-color="#3a3b3a" bindchange="change"/>
+ </view>
+ <view class="ctrl">
+  <view bind:tap="code">
+   <text class="iconfont icon-icon--" wx:if="{{code == 0}}"></text>
+   <text class="iconfont icon-liebiaoxunhuan" wx:elif="{{code == 1}}"></text>
+   <text class="iconfont icon-danquxunhuan" wx:else></text>
+  </view>
+  <text class="iconfont icon-xiayishou-copy" bind:tap="after"></text>
+  <view bind:tap="pop">
+   <text class="iconfont icon-bofang3" wx:if="{{status == false}}"></text>
+   <text class="iconfont icon-zanting_huaban" wx:else></text>
+  </view>
+  <text class="iconfont icon-xiayishou" bind:tap="befor"></text>
+  <text class="iconfont icon-PlayListbofangliebiao" bind:tap="pst"></text>
+ </view>
+</view>

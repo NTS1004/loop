@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home",
+    "pages/search/search",
+    "pages/listen/listen",
+    "pages/group/group",
+    "pages/play/play"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3a3b3a",
+    "navigationBarTitleText": "Loop音乐",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/Img/music.png",
+        "selectedIconPath": "pages/Img/_music.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "pages/Img/shipin.png",
+        "selectedIconPath": "pages/Img/_shipin.png"
+      }
+    ]
+  },
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

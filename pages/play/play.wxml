@@ -1,0 +1,24 @@
+<view>
+  <video class= "videoCss" src='{{url}}'  objectFit='cover' show-center-play-btn = true  controls  danmu-btn="{{false}}" autoplay="{{true}}" page-gesture = "true" 
+  enable-play-gesture	enable-progress-gesture enable-auto-rotation direction="90"></video>
+  <view class="vfo">
+   <h1>{{Vname}}-{{singer}}</h1>
+   <view>
+    <h2>{{Vcount}}万次播放</h2>
+    <h2>{{Vtime}}</h2>
+   </view>
+  </view>
+  <view class="vwho">
+    <h1>其他视频</h1>
+    <view class="vitem" wx:for="{{vi}}" wx:key="index" data-name="{{item.title}}" bind:tap="upda">
+     <image src="{{item.img}}"></image>
+     <view class="ofo">
+      <text>{{item.title}}</text>
+      <view class="ti">
+       <text>{{item.singer}}</text>
+       <text>{{item.date}}</text>
+      </view>
+     </view>
+    </view>
+  </view>
+</view>

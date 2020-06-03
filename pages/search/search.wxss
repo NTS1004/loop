@@ -1,0 +1,31 @@
+.search{display: flex;flex-flow: column;height: 100vh;}
+.input{margin: 0rpx 20rpx 0 20rpx;border: 1px solid #ccc;height: 75rpx;border-radius: 36rpx;margin-top: 20rpx;margin-bottom: 5rpx;font-size: 36rpx;text-align: center;position: relative;}
+.sedk{flex: 1;display: flex;display: flex;flex-flow: column;padding-bottom: 15rpx;margin: 15rpx 25rpx 0 25rpx;}
+.sena{display: flex;flex-flow: wrap;font-size: 28rpx;margin-top: 15rpx;}
+.seIt{padding: 13rpx 18rpx;border: 1rpx solid #3a3b3a;margin-right: 20rpx;border-radius: 36rpx;background: #3a3b3a;color: white;margin-bottom: 15rpx;}
+.muk{display: flex;margin: 20rpx 10rpx 5rpx 10rpx;}
+.muk image{width: 148rpx;height: 143rpx;border-radius: 6rpx;}
+.mui{flex: 1;display: flex;flex-flow: column;justify-content: space-around;margin-left: 12rpx;}
+.mi{display: flex;align-items: center;}
+.mi i{font-size: 20rpx;margin-right: 10rpx;width: 42rpx;border: 1px solid;border-radius: 8rpx;padding: 0 2px 1px 2px;text-align: center;}
+.yz{color: #49b1f5;}
+.dj{color: springgreen;}
+.mui span{font-size: 30rpx;}
+.select{margin: 0rpx 20rpx 0 20rpx;height: 55rpx;margin-top: 20rpx;margin-bottom: 5rpx;font-size: 36rpx;display: flex;}
+.select view{flex: 1;display: flex;justify-content: center;align-items: center;}
+.sez{padding: 0 10rpx;height: 60rpx;}
+.active{border-bottom: 2rpx solid;border-radius: 3rpx;color: rgb(63, 212, 125);}
+.set{flex: 1;}
+.swiper{height: 100%;}
+.swite{height: 100%;}
+.scroll{height: 100%;}
+.scroll ::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+}
+.vitem {margin: 10rpx 0;display: flex;width: 100%;}
+.vitem image{width: 270rpx;height: 155rpx;border-radius: 3rpx;}
+.ofo{display: flex;flex-flow: column;justify-content: space-around;margin-left: 15rpx;}
+.ti text{font-size: 30rpx;margin-right: 20rpx;}
+.sev{}
+.icon-guanbi{position: absolute;right: 30rpx;z-index: 10;top: 20rpx;color: #666666;}

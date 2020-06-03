@@ -1,0 +1,6 @@
+.home{display: flex;flex-flow: column;height: 100vh;}
+.text{margin-left: 25rpx;margin-top: 15rpx;margin-bottom: 15rpx;}
+.xt{margin-right: 40rpx;font-size: 40rpx;color: #3a3b3a;padding: 2rpx 5rpx;}
+.active{font-weight: bold;color: #49b1f5;border-bottom: 6rpx solid #3a3b3a;}
+.swiper{flex: 1;margin: 10rpx 25rpx 0 25rpx;}
+.scroll{height: 100%;}

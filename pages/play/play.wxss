@@ -1,0 +1,13 @@
+/* pages/play/play.wxss */
+.videoCss{
+  width: 100%;
+}
+.vfo{margin: 5rpx 18rpx 5rpx 18rpx;}
+.vfo h1{font-size: 39rpx;margin-bottom: 10rpx;}
+.vfo h2{font-size: 25rpx;margin-right: 16rpx;}
+.vwho{margin: 10rpx 18rpx 5rpx 18rpx;display: flex;flex-flow: column;}
+.vwho h1{font-size: 35rpx;margin-bottom: 5rpx;}
+.vitem {margin: 10rpx 0;display: flex;width: 100%;}
+.vitem image{width: 270rpx;height: 155rpx;border-radius: 3rpx;}
+.ofo{display: flex;flex-flow: column;justify-content: space-around;margin-left: 15rpx;}
+.ti text{font-size: 30rpx;margin-right: 20rpx;}

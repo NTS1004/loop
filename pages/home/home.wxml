@@ -1,0 +1,13 @@
+<view class="home">
+ <view class="text">
+  <text wx:for="{{text}}" wx:key="index" class="{{index == current ? 'xt active': 'xt'}}" bind:tap="swiperIndex" data-index="{{index}}">{{item}}</text>
+ </view>
+ <swiper class="swiper" current="{{current}}" bind:change="swiperTab">
+  <swiper-item>
+   <top></top>
+  </swiper-item>
+  <swiper-item>
+   <mv></mv>
+  </swiper-item>
+ </swiper>
+</view>

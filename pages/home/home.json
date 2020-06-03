@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "top": "/pages/components/top/top",
+    "mv": "/pages/components/mv/mv"
+  }
+}

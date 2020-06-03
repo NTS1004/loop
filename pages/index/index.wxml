@@ -1,0 +1,35 @@
+<view>
+ <swiper class="swiper" autoplay="{{true}}" circular="{{true}}" interval="2500" indicator-dots="{{true}}" indicator-color="white" indicator-active-color="#49b1f5">
+  <swiper-item wx:for="{{swiper}}" wx:key="index" data-name="{{item.musicName}}" bind:tap="swiper" data-index="{{index}}">
+   <image src="{{item.fmImg}}" style="width:100%;height:100%"></image>
+  </swiper-item>
+ </swiper>
+ <navigator url="/pages/search/search" class="navser" hover-class="none">
+  <icon class="icon-small" type="search" size="18"></icon>搜索
+ </navigator>
+ <view class="song">
+  <h1>歌单推荐</h1>
+  <scroll-view class="scroll" scroll-x="{{true}}">
+   <view class="ew">
+    <view class="sheet" wx:for="{{scroll}}" wx:key="index" data-id="{{item.id}}" data-img="{{item.img}}" data-name="{{item.name}}" bind:tap="scroll">
+    <image src="{{item.img}}"></image>
+    <span>{{item.name}}</span>
+    </view>
+   </view>
+  </scroll-view>
+ </view>
+ <view class="music">
+ <h1>歌曲推荐</h1>
+ <view class="muk" wx:for="{{music}}" wx:key="index" data-name="{{item.musicName}}" data-index="{{index}}" bind:tap="listen">
+    <image src="{{item.img}}"></image>
+    <view class="mui">
+     <text>{{item.musicName}}</text>
+     <view class="mi">
+      <i class="yz">FSQ</i>
+      <i class="dj">独家</i>
+      <span>{{item.album}}</span>
+     </view>
+    </view>
+   </view>
+ </view>
+</view>

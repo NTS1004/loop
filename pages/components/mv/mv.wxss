@@ -1,0 +1,14 @@
+.ita{width: 345rpx;float: left;margin-right: 10rpx;display: flex;flex-flow: column;align-items: center;margin-bottom: 13rpx;}
+.itt{margin-right: 0;}
+.ita image{margin-bottom: 8rpx;border-radius: 10rpx;}
+.ita span{font-size: 32rpx;}
+.vki{position: relative;width: 100%;}
+.vico{position: absolute;z-index: 10;left: 15rpx;bottom: 22rpx;color: white;display: flex;justify-content: space-between;}
+.vico h1{font-size: 26rpx;margin-left: 12rpx;}
+.time{font-size: 26rpx;position: absolute;z-index: 10;right: 15rpx;bottom: 27rpx;color: white;}
+.scroll{height: 100%;}
+.scroll ::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}

@@ -1,0 +1,16 @@
+<view class="group">
+ <view class="grba" style="background-image: url({{img}})">
+  <h1>{{name}}</h1>
+ </view>
+ <view class="muk" wx:for="{{group}}" wx:key="index" data-name="{{item.musicName}}" bind:tap="listen" data-index="{{index}}">
+    <image src="{{item.img}}"></image>
+    <view class="mui">
+     <text>{{item.musicName}}</text>
+     <view class="mi">
+      <i class="yz">FSQ</i>
+      <i class="dj">独家</i>
+      <span>{{item.album}}</span>
+     </view>
+    </view>
+   </view>
+ </view>

@@ -1,0 +1,52 @@
+<view class="search">
+<input type="text" class="input" value="{{value}}" bind:input="val" bind:confirm="input" placeholder="搜索音乐/视频/歌手"   >   
+   <text class="iconfont icon-guanbi" bind:tap="null"></text>
+  </input>
+ <view class="select" wx:if="{{mv.length > 0}}">
+   <view wx:for="{{text}}" wx:key="index">
+    <text class="{{index == current ? 'sez active' : 'sez'}}" bind:tap="swiperIndex" data-index="{{index}}">{{item}}</text>
+   </view>
+ </view>
+ <view class="sedk">
+  <view class="sek" wx:if="{{music.length == 0}}">
+  <h1>热门搜索</h1>
+  <view class="sena">
+   <view class="seIt" wx:for="{{name}}" wx:key="index" bind:tap="search" data-name="{{item.name}}">{{item.name}}</view>
+  </view>
+ </view>
+ <view class="set" wx:else>
+  <swiper class="swiper" current="{{current}}" bind:change="shiperTab">
+   <swiper-item class="swite">
+    <scroll-view class="scroll" scroll-y="{{true}}">
+     <view class="muk" wx:for="{{music}}" wx:key="index" data-name="{{item.musicName}}" bind:tap="listen" data-index="{{index}}">
+    <image src="{{item.img}}"></image>
+    <view class="mui">
+     <text>{{item.musicName}}</text>
+     <view class="mi">
+      <i class="yz">FSQ</i>
+      <i class="dj">独家</i>
+      <span>{{item.album}}</span>
+     </view>
+    </view>
+    </view>
+    </scroll-view>
+   </swiper-item>
+   <swiper-item wx:if="{{mv.length > 0}}">
+    <scroll-view class="scroll" scroll-y="{{true}}">
+     <view class="vitem" wx:for="{{mv}}" wx:key="index" data-name="{{item.title}}" bind:tap="upda">
+     <image src="{{item.img}}"></image>
+     <view class="ofo">
+      <text>{{item.title}}</text>
+      <view class="ti">
+       <text>{{item.singer}}</text>
+       <text>{{item.date}}</text>
+      </view>
+     </view>
+    </view>
+    </scroll-view>
+   </swiper-item>
+  </swiper>
+ </view>
+ </view>
+ 
+</view>
