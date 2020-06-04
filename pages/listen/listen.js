@@ -17,6 +17,10 @@ Page({
     name: "",
     index: 0,
     code: 0,
+    rotate: "",
+    play: false,
+    ti: "",
+    pors: false
   },
 
   /**
@@ -26,17 +30,13 @@ Page({
   onLoad: function (e) {
     this.setData({
       list: App.data.list,
-      index: App.data.index
+      index: App.data.index,
     })
     let that = this;
     this.ani = wx.createAnimation({
       duration:700,
       timingFunction:"ease"
-   })
-   this.mat = wx.createAnimation({
-    duration:800,
-    timingFunction:"ease"
-   })
+    })
     innerAudioContext.onTimeUpdate(()=>{
       setTimeout(()=>{
         let currenTime = parseInt(innerAudioContext.currentTime)
@@ -114,6 +114,7 @@ Page({
           that.setData({
             music: data,
             musicImg: data.img,
+            play: true,
             status: true,
             name: data.musicName
           })
@@ -141,8 +142,14 @@ Page({
   },
   pop(){
     if(this.data.status){
+      this.setData({
+        pors: true
+      })
       innerAudioContext.pause()
     }else{
+      this.setData({
+        pors: false
+      })
       innerAudioContext.play()
     }
     this.setData({
@@ -193,15 +200,30 @@ Page({
     })
   },
   after(){
+    this.setData({
+      play: false,
+      pors: false
+    })
+    if(this.data.ti != ""){
+      this.setData({
+        ti: clearTimeout(this.data.ti)
+      })
+    }
     let index = parseInt(this.data.index) - 1;
     if(index < 0){
       index = this.data.list.length-1
     }
     let data = this.data.list[index];
+    let ti = setTimeout(()=>{
+      this.setData({
+        play: true
+      })
+    },500)
     this.setData({
       musicImg: data.img,
       name: data.musicName,
-      index: index
+      index: index,
+      ti: ti
     })
     wx.setNavigationBarTitle({
       title: data.musicName,
@@ -211,15 +233,26 @@ Page({
     App.data.name = data.musicName;
   },
   befor(){
+    this.setData({
+      play: false,
+      pors: false
+    })
+    
     let index = parseInt(this.data.index) + 1;
     if(index >= this.data.list.length){
       index = 0
     }
     let data = this.data.list[index];
+    let ti = setTimeout(()=>{
+      this.setData({
+        play: true
+      })
+    },1000)
     this.setData({
       musicImg: data.img,
       name: data.musicName,
-      index: index
+      index: index,
+      ti: ti
     })
     wx.setNavigationBarTitle({
       title: data.musicName,

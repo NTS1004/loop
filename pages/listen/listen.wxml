@@ -24,7 +24,7 @@
    </ul>
  </view>
  <view class="bigBack">
-  <view class="backimg" style="background-image: url({{musicImg}})"></view>
+  <view class="backimg" class="{{play==true ? 'backimg' : 'backimg imgAni'}} {{pors==false ? 'backimg' : 'backimg imgStop'}}" style="background-image: url({{musicImg}})"></view>
  </view>
  <view class="body-view">
    <slider class="slider" bindchange="slider1change" left-icon="cancel" right-icon="success_no_circle" block-size="14" value='{{position}}' color="rgba(0,0,0,.2)" selected-color="#3a3b3a" bindchange="change"/>
