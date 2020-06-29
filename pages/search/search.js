@@ -111,7 +111,9 @@ Page({
   },
   null(){
     this.setData({
-      value: ""
+      value: "",
+      music: [],
+      mv: []
     })
   },
   /**
